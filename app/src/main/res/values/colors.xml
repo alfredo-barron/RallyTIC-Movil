@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="light_blue_darken_1">#039be5</color>
+    <color name="light_blue_darken_3">#0277bd</color>
+    <color name="red">#f44336</color>
+    <color name="red_darken_1">#ef5350</color>
+    <color name="yellow_darken_1">#fdd835</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="mt_red">#FF3366</color>
+    <color name="mt_gray1">#BFC4CA</color>
+    <color name="mt_gray2">#BBBBBE</color>
+    <color name="mt_gray3">#77777D</color>
+    <color name="mt_gray4">#8E959E</color>
+    <color name="mt_gray5">#F8F8F9</color>
+    <color name="mt_gray6">#B6B6B8</color>
+    <color name="mt_black">#1D1D26</color>
+    <color name="mt_green">#50D2C2</color>
+    <color name="mt_purple">#D667CD</color>
+    <color name="mt_yellow">#FCAB53</color>
+</resources>

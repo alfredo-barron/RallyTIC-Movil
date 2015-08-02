@@ -1,0 +1,107 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_darken_3"
+    tools:context="alfredobarron.com.rallytic.ui.LoginActivity"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_login"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@android:drawable/picture_frame"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_gravity="top|center"
+                android:id="@+id/user_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:padding="5dp"
+                app:errorTextAppearance="@style/TextAppearence.App.ErrorTextInputLayout"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/password_text_input_layout"
+                android:layout_alignStart="@+id/password_text_input_layout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/user_login_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mt_black"
+                    android:hint="@string/user"
+                    android:textSize="20sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/user_text_input_layout"
+                android:layout_gravity="top|center"
+                android:id="@+id/password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="5dp"
+                app:errorTextAppearance="@style/TextAppearence.App.ErrorTextInputLayout"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/password_login_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mt_black"
+                    android:hint="@string/password"
+                    android:textSize="20sp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_below="@+id/password_text_input_layout"
+                android:id="@+id/sign_in_login_button"
+                style="?android:textAppearanceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="INICIAR"
+                android:textStyle="bold"
+                android:onClick="log_in"
+                android:background="@color/red_darken_1"
+                android:textColor="#fff"
+                android:shadowColor="#204d74"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

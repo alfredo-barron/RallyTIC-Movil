@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/event_dayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/mt_black"
+        android:text=""
+        android:textSize="36sp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/event_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/mt_black"
+        android:text=""
+        android:textSize="12sp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:id="@+id/event_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text=""
+        android:textSize="40sp"
+        android:background="@drawable/blue_circle"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_event"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/event_rally_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mt_black"
+            android:textSize="25sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp"
+            android:gravity="left|center"
+            android:text="Sin evento"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/event_rally_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mt_gray2"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="12dp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_below="@+id/layout_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_task_coordinator_layout"
+        >
+
+        <alfredobarron.com.rallytic.ui.widget.BottomButton
+            android:id="@+id/evento_disponible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVENTO DISPONIBLE"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/light_blue_darken_3"
+            android:textSize="16sp"
+            android:padding="16dp"
+            app:layout_anchor="@id/create_task_coordinator_layout"
+            app:layout_anchorGravity="bottom" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,174 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="alfredobarron.com.rallytic.ui.RequestActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ToolBarStyleOne"
+
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/mt_black"
+        android:textSize="20sp"
+        android:padding="18dp"
+        android:text="@string/question"
+        />
+
+    <FrameLayout
+        android:layout_below="@+id/question_text"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="42dp"
+            android:layout_gravity="top|center"
+            android:id="@+id/answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="12dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/TextAppearence.App.ErrorTextInputLayout"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/answer_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mt_black"
+                android:hint="Clave"
+                android:textSize="24sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/track_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/light_blue_darken_1"
+        android:src="@drawable/ic_find_in_page_black_48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickFAB"/>
+
+    <LinearLayout
+        android:layout_below="@+id/question_text"
+        android:layout_marginTop="217dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:background="@color/light_blue_darken_1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="INTENTOS"
+                android:textSize="18sp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/count_intents_text"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="32sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:background="@color/mt_red">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="TIEMPO"
+                android:textSize="18sp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/count_time_text"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="32sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_below="@+id/track_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_task_coordinator_layout"
+        >
+
+        <alfredobarron.com.rallytic.ui.widget.BottomButton
+            android:id="@+id/verificar_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificar"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/red_darken_1"
+            android:textSize="16sp"
+            android:padding="16dp"
+            app:layout_anchor="@id/create_task_coordinator_layout"
+            app:layout_anchorGravity="bottom"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

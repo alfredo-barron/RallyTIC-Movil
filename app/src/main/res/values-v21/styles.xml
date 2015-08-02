@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_blue_darken_1</item>
+        <item name="android:colorPrimaryDark">@color/light_blue_darken_3</item>
+        <item name="colorPrimaryDark">@color/mt_black</item>
+        <item name="colorAccent">@color/mt_gray2</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_blue_darken_1</item>
+        <item name="colorPrimaryDark">@color/mt_black</item>
+        <item name="colorAccent">@color/mt_gray2</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/mt_gray3</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextAppearence.App.ErrorTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/mt_red</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolBarStyleOne" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/mt_black</item>
+        <item name="android:textColorSecondary">@color/mt_gray6</item>
+        <item name="actionMenuTextColor">@color/mt_gray1</item>
+    </style>
+
+
+</resources>
